@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Header & Navigation */
+header {
+  background-color: #008000; /* Green */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  animation: fadeIn 1s ease forwards;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tagline {
+  margin-top: 5px;
+  font-size: 1.2em;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #f0f0f0;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  color: #008000;
+}
+
+.hero p {
+  color: #666;
+}
+
+/* Product Section */
+#products {
+  background-color: #fff;
+  padding: 50px 20px;
+}
+
+#products h2 {
+  color: #008000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.product-category {
+  margin-bottom: 40px;
+}
+
+.product-category h3 {
+  color: #008000;
+}
+
+.product-category ul {
+  list-style-type: square;
+  margin-left: 20px;
+  color: #333;
+}
+
+/* Locate Us */
+#locate {
+  background-color: #fff8e1; /* Subtle yellow */
+  padding: 50px 20px;
+}
+
+#locate h2, #locate p {
+  text-align: center;
+  color: #008000;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #f0f0f0;
+  padding: 50px 20px;
+}
+
+#contact h2 {
+  color: #008000;
+  text-align: center;
+}
+
+#contactForm {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contactForm label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+#contactForm button {
+  background-color: #008000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contactForm button:hover {
+  background-color: #006400;
+}
+
+/* Footer */
+footer {
+  background-color: #008000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate {
+  animation: fadeIn 1s forwards;
+}
